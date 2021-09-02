@@ -25,6 +25,15 @@ describe('Counter Tests', () => {
         console.log("Tüm testlerden önce bir defa çalışır.");
     })
 
+    afterAll(() => {
+        console.log("Tüm testlerden sonra bir defa çalışır.");
+    })
+
+    afterEach(() => {
+        //mesela beforeEach ile eklenen bir test kaydını afterEach'ta kaldırabilrsiin.
+        console.log("Her testten sonra 1 kere çalışır.");
+    })
+
     //artıran buton test edildi.
     test('increase btn', () => {
         //bu butona tıklansın.
