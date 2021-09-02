@@ -21,6 +21,10 @@ describe('Counter Tests', () => {
         decreaseBtn = screen.getByText('Decrease');
     })
 
+    beforeAll(() => {
+        console.log("Tüm testlerden önce bir defa çalışır.");
+    })
+
     //artıran buton test edildi.
     test('increase btn', () => {
         //bu butona tıklansın.
